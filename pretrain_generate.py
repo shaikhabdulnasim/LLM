@@ -4,7 +4,7 @@
 # In[9]:
 
 
-from ipynb.fs.full.model import GPTModel
+from ipynb.fs.full.gpt_block import GPTModel
 
 
 # In[10]:
@@ -30,7 +30,7 @@ model.eval()
 
 
 import tiktoken
-from ipynb.fs.full.model import generate_text_simple
+from ipynb.fs.full.gpt_block import generate_text_simple
 
 def text_to_token_ids(text, tokenizer):
     encoded = tokenizer.encode(text, allowed_special={'<|endoftext|>'})
